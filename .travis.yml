@@ -1,0 +1,17 @@
+language: rust
+sudo: false
+cache: cargo
+os:
+  - windows
+  - linux
+  - osx
+rust:
+  - stable
+  - beta
+  - nightly
+matrix:
+  allow_failures:
+    - rust: nightly
+script:
+  - cargo build --verbose
+  - cargo test --verbose
