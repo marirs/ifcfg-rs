@@ -1,5 +1,8 @@
 IFCFG
 -----
+![Crates.io](https://img.shields.io/crates/v/ifcfg)
+[![Documentation](https://docs.rs/ifcfg/badge.svg)](https://docs.rs/ifcfg/0.1.0/ifcfg/struct.IfCfg.html)
+[![Build Status](https://travis-ci.com/marirs/ifcfg-rs.svg?branch=master)](https://travis-ci.com/marirs/ifcfg-rs)
 
 IFCFG (ifconfig) is a Rust library to get network interfaces information for 
 Windows/Linux/Mac
