@@ -17,6 +17,11 @@ use std::{
 
 #[cfg(not(windows))]
 fn main() {
+    let target_os = env::var("CARGO_CFG_TARGET_OS");
+    match target_os.as_ref().map(|x| &**x) {
+        Ok("windows") => return,
+        _ => {},
+    }
     let in_path = Path::new("src/unix/c").join("constants.c.in");
     let out_path = PathBuf::from(env::var_os("OUT_DIR").unwrap()).join("constants.c");
 
