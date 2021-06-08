@@ -13,7 +13,7 @@ Windows/Linux/Mac
 #### Include in project
 ```toml
 [dependencies]
-ifcfg = "0.1.1"
+ifcfg = "0.1.2"
 ```
 
 #### Example
