@@ -152,7 +152,7 @@ impl IpAdapterAddresses {
     }
 }
 
-#[link(name = "Iphlpapi")]
+#[link(name = "iphlpapi")]
 extern "system" {
     fn GetAdaptersAddresses(
         family: ULONG,
